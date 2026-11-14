@@ -1,0 +1,240 @@
+export type Property = {
+  id: string;
+  code: string;
+  title: string;
+  locality: string;
+  intent: "Rent" | "Sale";
+  type: "Flat";
+  bhk: number;
+  areaVar: number;
+  image: string;
+  features: string[];
+  description: string;
+  noBrokerage?: boolean;
+};
+
+export const properties: Property[] = [
+  {
+    id: "rs-0246",
+    code: "RS-0246",
+    title: "2 BHK Flat for Sale",
+    locality: "Nirnaynagar",
+    intent: "Sale",
+    type: "Flat",
+    bhk: 2,
+    areaVar: 100,
+    image: "/images/home-sunset.png",
+    features: ["Semi furnished", "Well maintained", "East facing"],
+    description: "A well-maintained, semi-furnished 2 BHK resale flat near Rameshwar Temple, Nirnaynagar.",
+  },
+  {
+    id: "rs-0245",
+    code: "RS-0245",
+    title: "2 BHK Flat for Sale",
+    locality: "Vadaj",
+    intent: "Sale",
+    type: "Flat",
+    bhk: 2,
+    areaVar: 125,
+    image: "/images/apartment-building.png",
+    features: ["10-year-old scheme", "Semi furnished", "Low-rise scheme"],
+    description: "A semi-furnished 2 BHK in a low-rise, 10-year-old scheme near Bhimajipura Circle, Vadaj.",
+  },
+  {
+    id: "rs-0244",
+    code: "RS-0244",
+    title: "Brand New Flat for Sale",
+    locality: "Navrangpura",
+    intent: "Sale",
+    type: "Flat",
+    bhk: 0,
+    areaVar: 326,
+    image: "/images/villa-modern.png",
+    features: ["Big balcony", "2 allotted parking", "Club house", "Terrace amenities"],
+    description: "A brand-new flat near Ishita Tower, Navrangpura, with a large balcony, clubhouse and terrace amenities.",
+    noBrokerage: true,
+  },
+  {
+    id: "rs-0243",
+    code: "RS-0243",
+    title: "3 BHK Flat for Sale",
+    locality: "Satellite",
+    intent: "Sale",
+    type: "Flat",
+    bhk: 3,
+    areaVar: 160,
+    image: "/images/home-garden.png",
+    features: ["Fully furnished", "7-year-old scheme", "Garden", "Gym", "Home theater"],
+    description: "A fully furnished 3 BHK in a 7-year-old scheme with garden, gym and home theater, near Sima Hall, Satellite.",
+  },
+  {
+    id: "rs-0242",
+    code: "RS-0242",
+    title: "2 BHK Flat for Sale",
+    locality: "Ghatlodia",
+    intent: "Sale",
+    type: "Flat",
+    bhk: 2,
+    areaVar: 107,
+    image: "/images/home-estate.png",
+    features: ["Well maintained", "Affordable price"],
+    description: "A well-maintained, affordable 2 BHK near Shayona Circle, Chankiyapuri.",
+  },
+  {
+    id: "rs-0241",
+    code: "RS-0241",
+    title: "2 BHK Flat for Sale",
+    locality: "Bopal",
+    intent: "Sale",
+    type: "Flat",
+    bhk: 2,
+    areaVar: 118,
+    image: "/images/villa-pool.png",
+    features: ["Balcony", "Lift", "Parking"],
+    description: "A practical 2 BHK resale flat in Bopal with balcony, lift and parking.",
+  },
+  {
+    id: "rs-0240",
+    code: "RS-0240",
+    title: "2 BHK Flat for Rent",
+    locality: "Gota",
+    intent: "Rent",
+    type: "Flat",
+    bhk: 2,
+    areaVar: 95,
+    image: "/images/apartment-building.png",
+    features: ["Semi furnished", "Lift", "Family friendly"],
+    description: "A comfortable semi-furnished 2 BHK rental flat in Gota, suited to a family.",
+  },
+  {
+    id: "rs-0239",
+    code: "RS-0239",
+    title: "3 BHK Flat for Sale",
+    locality: "Thaltej",
+    intent: "Sale",
+    type: "Flat",
+    bhk: 3,
+    areaVar: 185,
+    image: "/images/home-garden.png",
+    features: ["Spacious rooms", "Balcony", "Parking"],
+    description: "A spacious 3 BHK resale flat in Thaltej with a balcony and parking.",
+  },
+  {
+    id: "rs-0238",
+    code: "RS-0238",
+    title: "2 BHK Flat for Rent",
+    locality: "Naranpura",
+    intent: "Rent",
+    type: "Flat",
+    bhk: 2,
+    areaVar: 105,
+    image: "/images/home-sunset.png",
+    features: ["Well maintained", "Good natural light", "Parking"],
+    description: "A well-maintained 2 BHK rental flat with natural light in Naranpura.",
+  },
+];
+
+export const soldOutProperties: Property[] = [
+  {
+    id: "sold-sample-01",
+    code: "SOLD-01",
+    title: "2 BHK Resale Flat",
+    locality: "Bopal",
+    intent: "Sale",
+    type: "Flat",
+    bhk: 2,
+    areaVar: 112,
+    image: "/images/home-garden.png",
+    features: ["Sold out", "Resale"],
+    description: "Sample sold-out gallery entry. Replace with a verified completed sale before publishing.",
+  },
+  {
+    id: "sold-sample-02",
+    code: "SOLD-02",
+    title: "3 BHK Family Flat",
+    locality: "Satellite",
+    intent: "Sale",
+    type: "Flat",
+    bhk: 3,
+    areaVar: 170,
+    image: "/images/villa-modern.png",
+    features: ["Sold out", "Resale"],
+    description: "Sample sold-out gallery entry. Replace with a verified completed sale before publishing.",
+  },
+  {
+    id: "sold-sample-03",
+    code: "SOLD-03",
+    title: "2 BHK Apartment",
+    locality: "Gota",
+    intent: "Sale",
+    type: "Flat",
+    bhk: 2,
+    areaVar: 98,
+    image: "/images/apartment-building.png",
+    features: ["Sold out", "Resale"],
+    description: "Sample sold-out gallery entry. Replace with a verified completed sale before publishing.",
+  },
+];
+
+export const propertyTranslations: Record<string, { title: string; description: string; features: string[] }> = {
+  "rs-0246": {
+    title: "વેચાણ માટે 2 બીએચકે ફ્લેટ",
+    description: "રામેશ્વર મંદિર નજીક, નિર્ણયનગરમાં સારી રીતે જાળવેલો અર્ધ-ફર્નિશ્ડ 2 બીએચકે રીસેલ ફ્લેટ.",
+    features: ["અર્ધ-ફર્નિશ્ડ", "સારી રીતે જાળવેલું", "પૂર્વમુખી"],
+  },
+  "rs-0245": {
+    title: "વેચાણ માટે 2 બીએચકે ફ્લેટ",
+    description: "ભીમજીપુરા સર્કલ, વડજ નજીકની ઓછી માળની 10 વર્ષ જૂની સ્કીમમાં અર્ધ-ફર્નિશ્ડ 2 બીએચકે.",
+    features: ["10 વર્ષ જૂની સ્કીમ", "અર્ધ-ફર્નિશ્ડ", "ઓછી માળની સ્કીમ"],
+  },
+  "rs-0244": {
+    title: "વેચાણ માટે નવો ફ્લેટ",
+    description: "ઇશિતા ટાવર, નવરંગપુરા નજીક મોટો બાલ્કની, ક્લબહાઉસ અને ટેરેસ સુવિધાઓ ધરાવતો નવો ફ્લેટ.",
+    features: ["મોટો બાલ્કની", "2 ફાળવેલ પાર્કિંગ", "ક્લબહાઉસ", "ટેરેસ સુવિધાઓ"],
+  },
+  "rs-0243": {
+    title: "વેચાણ માટે 3 બીએચકે ફ્લેટ",
+    description: "સિમા હોલ, સેટેલાઇટ નજીક ગાર્ડન, જિમ અને હોમ થિયેટર ધરાવતી 7 વર્ષ જૂની સ્કીમમાં સંપૂર્ણ ફર્નિશ્ડ 3 બીએચકે.",
+    features: ["સંપૂર્ણ ફર્નિશ્ડ", "7 વર્ષ જૂની સ્કીમ", "ગાર્ડન", "જિમ", "હોમ થિયેટર"],
+  },
+  "rs-0242": {
+    title: "વેચાણ માટે 2 બીએચકે ફ્લેટ",
+    description: "છાયોના સર્કલ, ચાણક્યપુરી નજીક સારી રીતે જાળવેલો અને વાજબી કિંમતનો 2 બીએચકે.",
+    features: ["સારી રીતે જાળવેલું", "વાજબી કિંમત"],
+  },
+  "rs-0241": {
+    title: "વેચાણ માટે 2 બીએચકે ફ્લેટ",
+    description: "બોપલમાં બાલ્કની, લિફ્ટ અને પાર્કિંગ ધરાવતો ઉપયોગી 2 બીએચકે રીસેલ ફ્લેટ.",
+    features: ["બાલ્કની", "લિફ્ટ", "પાર્કિંગ"],
+  },
+  "rs-0240": {
+    title: "ભાડા માટે 2 બીએચકે ફ્લેટ",
+    description: "ગોતામાં પરિવાર માટે યોગ્ય આરામદાયક અર્ધ-ફર્નિશ્ડ 2 બીએચકે ભાડાનો ફ્લેટ.",
+    features: ["અર્ધ-ફર્નિશ્ડ", "લિફ્ટ", "પરિવાર માટે યોગ્ય"],
+  },
+  "rs-0239": {
+    title: "વેચાણ માટે 3 બીએચકે ફ્લેટ",
+    description: "થલતેજમાં બાલ્કની અને પાર્કિંગ ધરાવતો વિશાળ 3 બીએચકે રીસેલ ફ્લેટ.",
+    features: ["વિશાળ રૂમ", "બાલ્કની", "પાર્કિંગ"],
+  },
+  "rs-0238": {
+    title: "ભાડા માટે 2 બીએચકે ફ્લેટ",
+    description: "નારણપુરામાં કુદરતી પ્રકાશ ધરાવતો સારી રીતે જાળવેલો 2 બીએચકે ભાડાનો ફ્લેટ.",
+    features: ["સારી રીતે જાળવેલું", "સારો કુદરતી પ્રકાશ", "પાર્કિંગ"],
+  },
+  "sold-sample-01": {
+    title: "2 બીએચકે રીસેલ ફ્લેટ",
+    description: "વેચાઈ ગયેલી મિલકતનું નમૂનાનું ઉદાહરણ.",
+    features: ["વેચાઈ ગયું", "રીસેલ"],
+  },
+  "sold-sample-02": {
+    title: "3 બીએચકે પરિવાર માટેનો ફ્લેટ",
+    description: "વેચાઈ ગયેલી મિલકતનું નમૂનાનું ઉદાહરણ.",
+    features: ["વેચાઈ ગયું", "રીસેલ"],
+  },
+  "sold-sample-03": {
+    title: "2 બીએચકે એપાર્ટમેન્ટ",
+    description: "વેચાઈ ગયેલી મિલકતનું નમૂનાનું ઉદાહરણ.",
+    features: ["વેચાઈ ગયું", "રીસેલ"],
+  },
+};

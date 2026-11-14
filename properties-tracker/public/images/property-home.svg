@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" fill="none">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#D9ECFF"/><stop offset="1" stop-color="#F7FBFF"/></linearGradient><linearGradient id="house" x2="1" y2="1"><stop stop-color="#FFF"/><stop offset="1" stop-color="#D6E8F7"/></linearGradient></defs>
+  <path fill="url(#sky)" d="M0 0h900v600H0z"/><circle cx="710" cy="135" r="67" fill="#EACB7A" opacity=".8"/>
+  <path fill="#C5E0F5" d="M0 414 130 315l115 65 127-145 149 155 140-109 239 159v160H0z"/>
+  <path fill="#6C9AB5" d="M128 255h183v269H128z"/><path fill="#F8FBFD" d="M151 287h42v58h-42zm72 0h42v58h-42zm-72 91h42v58h-42zm72 0h42v58h-42z"/>
+  <path fill="url(#house)" d="m337 299 117-92 117 92v225H337z"/><path fill="#0B2A4A" d="m316 301 138-111 138 111-19 22-119-95-119 95z"/>
+  <path fill="#90BEDB" d="M365 330h50v59h-50zm127 0h50v59h-50zm-73 91h70v103h-70z"/><path fill="#A4CDAF" d="M0 490c128-59 190-32 303 5 97 32 160 25 245-1 135-41 239-23 352 22v84H0z"/>
+  <path fill="#587C5F" d="M85 451h10v73H85zm-24 32c0-21 14-37 29-37s29 16 29 37-29 36-29 36-29-15-29-36zm659-26h11v71h-11zm-27 30c0-21 15-37 32-37s32 16 32 37-32 36-32 36-32-15-32-36z"/>
+</svg>
